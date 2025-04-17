@@ -7,7 +7,7 @@ const sqlRoute = require('./routes/sql_routes')
 
 app.use(express.json());
 app.use(cors({
-    origin: "http://localhost:5173",
+    origin: "https://top-silly-moment-in-chess.netlify.app",
     credentials: true
 }));
 
@@ -17,7 +17,7 @@ const Port = process.env.PORT || 6900;
 const db_url = process.env.DB_URL;
 
 app.get("/", (req, res) => {
-    res.send("<h2> My name is Avinash!. I am from squad-84 </h2>")
+    res.send("<h2> My name is Avinash. I am from squad-84 </h2>")
 })
 
 app.get('/ping', (req, res) => {

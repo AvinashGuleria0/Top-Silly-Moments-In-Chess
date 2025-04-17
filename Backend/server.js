@@ -7,7 +7,8 @@ const sqlRoute = require('./routes/sql_routes')
 
 app.use(express.json());
 app.use(cors({
-    origin: "https://top-silly-moment-in-chess.netlify.app",
+    origin: ["https://top-silly-moment-in-chess.netlify.app",
+        "http://localhost:5173"],
     credentials: true
 }));
 
